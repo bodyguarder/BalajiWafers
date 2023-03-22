@@ -5,6 +5,7 @@
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -25,7 +26,169 @@
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+        <header class="header">
+          <div class="header__container container">
+            <a class="header__logo-link logo" href="#">
+              <img class="logo__img" src="images/header/logo.png" alt="balaji logo">
+            </a>
+
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">home</a>
+              </li>
+
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">about</a>
+              </li>
+
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">chips</a>
+              </li>
+
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">services</a>
+              </li>
+            </ul>
+
+            <form class="header__form search-form" action="#">
+              <button class="search-form__button" style="background-image: url(images/sprite.svg#search-icon)"
+                type="submit">
+                <span class="sr-only">search button</span>
+              </button>
+
+              <label class="sr-only" for="search-input">search input</label>
+
+              <input class="search-form__input" name="search-input" id="search-input" type="text" placeholder="Search">
+
+              <button class="search-form__button search-form__button--cart-btn"
+                style="background-image: url(images/sprite.svg#cart-icon);" type="submit">
+                <span class="sr-only">cart button</span>
+              </button>
+            </form>
+          </div>
+        </header>
+
+        <main class="main-page">
+          <section class="product-page">
+            <div class="product-page__container container">
+              <div class="product-page__description">
+                <h1 class="product-page__title">flamin hot nachos</h1>
+
+                <p class="product-page__text">Presenting the Classic Nachos with a Flaming Hot Twist. It will Rock your
+                  taste buds with Chilli & Lime.</p>
+
+                <div class="product-page__wrapper">
+                  <button class="product-page__btn" type="submit">add to cart</button>
+
+                  <ul class="product-page__count-list count">
+                    <li class="count__item">+</li>
+
+                    <li class="count__item count__item--num">
+                      <span>5</span>
+                    </li>
+
+                    <li class="count__item">-</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="product-page__content">
+                <img class="product-page__img" src="images/product-page/nachos-hot.png" alt="nachos images">
+
+                <img class="product-page__img product-page__img--shadow" src="images/product-page/nachos-shadow.png"
+                  alt="nachos shadow images">
+              </div>
+
+              <ul class="product-page__list">
+                <li class="product-page__item">
+                  <span class="product-page__icon product-page__icon--chilli"></span> chilli</li>
+
+                <li class="product-page__item">
+                  <span class="product-page__icon product-page__icon--corn"></span> corn</li>
+
+                <li class="product-page__item">
+                  <span class="product-page__icon product-page__icon--spices"></span> spices</li>
+              </ul>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer__container container">
+            <ul class="footer__list">
+              <li class="footer__product-card">
+                <div class="product-card product-card--chilli">
+                  <img class="product-card__img" src="images/footer/crunchex.png" alt="crunchex chilli">
+
+                  <div class="product-card__wrapper">
+                    <h2 class="product-card__title">crunchex chilli</h2>
+
+                    <div class="product-card__attributes">
+                      <div class="product-card__rating star" data-rateyo-rating=5 data-rateyo-normal-fill="#F6F6F6"
+                        data-rateyo-spacing="6px">
+                        <span class="sr-only">product rating</span>
+                      </div>
+
+                      <span class="product-card__price">
+                        <span>₹</span>10
+                      </span>
+                    </div>
+
+                    <button class="product-card__btn" type="button">order now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="footer__product-card">
+                <div class="product-card product-card--tomato">
+                  <img class="product-card__img" src="images/footer/tomatotwist.png" alt="tomato twist">
+
+                  <div class="product-card__wrapper">
+                    <h2 class="product-card__title">tomato twist</h2>
+
+                    <div class="product-card__attributes">
+                      <div class="product-card__rating star" data-rateyo-rating=5 data-rateyo-normal-fill="#F6F6F6"
+                        data-rateyo-spacing="6px">
+                        <span class="sr-only">product rating</span>
+                      </div>
+
+                      <span class="product-card__price">
+                        <span>₹</span>10
+                      </span>
+                    </div>
+
+                    <button class="product-card__btn" type="button">order now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="footer__product-card">
+                <div class="product-card product-card--chaat">
+                  <img class="product-card__img" src="images/footer/chaatchaska.png" alt="chaat chaska">
+
+                  <div class="product-card__wrapper">
+                    <h2 class="product-card__title">chaat chaska</h2>
+
+                    <div class="product-card__attributes">
+                      <div class="product-card__rating star" data-rateyo-rating=5 data-rateyo-normal-fill="#F6F6F6"
+                        data-rateyo-spacing="6px">
+                        <span class="sr-only">product rating</span>
+                      </div>
+
+                      <span class="product-card__price">
+                        <span>₹</span>10
+                      </span>
+                    </div>
+
+                    <button class="product-card__btn" type="button">order now</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </footer>
+
+        <script src="js/main.min.js"></script>
     </div>
 
 </body>
